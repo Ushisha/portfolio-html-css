@@ -1,15 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-
-    <title>About Me</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me / Ikuko Sawamoto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&family=Poiret+One&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Raleway&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <h2>About me ...coming soon</h2>
+  <body class="about-page">
+    <div class="container">
+      <header>
+        <nav class="nav-wrapper">
+          <ul class="left-side">
+            <li class="nav-link-wrapper">
+              <a href="index.html">Portfolio.</a>
+            </li>
+          </ul>
+
+          <ul class="right-side">
+            <li class="brand">
+              <a href="./index.html"
+                ><img
+                  class="logo"
+                  src="images/logo2.png"
+                  alt="company logo"
+                  width="50"
+                  height="50"
+                />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="content-wrapper">
+        <section class="about">
+          <h1 class="about-header">Hi, my name is Ikuko.</h1>
+          <p class="about-text">
+            I’m a Frontend Web Developer and design systems engineer based in
+            London.<br />
+            I love the Web platform and spend my time solving problems to make
+            it better for everyone.<br />
+          </p>
+          <div class="contact">
+            <a class="contact-link email" href="mailto:usisha.s@gmail.com"
+              >Contact me</a
+            >
+            <span>or</span>
+
+            <a class="contact-link github" href="https://github.com/Ushisha">
+              <img class="svg" src="images/github.svg" width="30" height="30" />
+            </a>
+          </div>
+        </section>
+      </main>
+      <footer id="footer">
+        <p class="copyright">&copy; 2021 Ikuko Sawamoto</p>
+      </footer>
+    </div>
+    <script></script>
   </body>
 </html>

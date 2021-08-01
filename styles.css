@@ -1,53 +1,63 @@
 /* Master stlye */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .body {
   font-family: "Poiret One", cursive;
   margin: 0px;
 }
-.container {
+/* .container {
   display: grid;
-  grid-template-columns: 1fr;
-}
+  grid-template-columns: 1fr, 1fr, 1fr;
+} */
 /* Nav style */
 .nav-wrapper {
+  font-family: "Poiret One", cursive;
   display: flex;
   justify-content: space-between;
-  padding: 38px;
+  padding: 1.5rem;
+}
+li {
+  list-style-type: none;
 }
 .left-side {
   display: flex;
+  align-items: center;
 }
 
-.nav-wrapper > .left-side > div {
+.nav-wrapper > .left-side {
   margin-right: 20px;
   font-size: 0.9em;
+
   text-transform: uppercase;
 }
 
 .nav-link-wrapper {
   height: 22px;
-  border-bottom: 1px solid transparent;
-  transition: border-bottom 0.5s;
 }
 
-.nav-link-wrapper a {
-  color: #8a8a8a;
+.nav-link-wrapper a,
+.email {
+  color: black;
   text-decoration: none;
+  border-bottom: 1px solid transparent;
   transition: color 0.5s;
-}
-
-.nav-link-wrapper:hover {
-  border-bottom: 1px solid black;
+  margin-right: 2em;
 }
 
 .nav-link-wrapper a:hover {
-  color: black;
+  border-bottom: 1px solid rgb(120, 229, 230);
+  color: rgb(120, 229, 230);
+  transition: 0.5s;
 }
 
 /* Portfolio styles */
 
 .portfolio-items-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: column;
 }
 
 .portfolio-item-wrapper {
@@ -58,11 +68,20 @@
   height: 350px;
   width: 100%;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
+}
+.portfolio-item-wrapper:hover .color-overlay {
+  background-color: hsla(0, 0%, 35%, 0.9);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+  transition: 1s;
 }
 
 .img-text-wrapper {
+  font-family: "Raleway", sans-serif;
   position: absolute;
   top: 0;
   display: flex;
@@ -78,17 +97,107 @@
   width: 50%;
   margin-bottom: 20px;
 }
-.img-text-wrapper.subtitle {
+
+.img-text-wrapper .subtitle {
   transition: 1s;
-  font-weight: 600;
+  font-weight: 400;
   color: transparent;
 }
-/*  needs to be more specific with selector */
+
+.github a {
+  text-decoration: none;
+  color: transparent;
+  font-size: 0.8em;
+  margin-top: 1.5em;
+}
+
+.img-text-wrapper:hover .github a {
+  transition: 1s;
+  color: rgba(121, 227, 253, 0.89);
+}
+.github:hover {
+  color: white;
+}
+
 .img-text-wrapper:hover .subtitle {
-  font-weight: 600;
-  color: lightseagreen;
+  transition: 1s;
+  font-weight: 400;
+  color: white;
+  line-height: 1.5em;
 }
 .img-darken {
   transition: 1s;
   filter: brightness(10%);
+}
+
+#footer {
+  font-family: "Poiret One", cursive;
+  line-height: 2em;
+  text-align: center;
+  color: #5f5d5d;
+  font-size: 1rem;
+  margin: 2rem 0;
+}
+
+/* about page style*/
+
+.about-page {
+  height: 100vh;
+  background: rgb(61, 225, 226);
+  background: linear-gradient(
+    335deg,
+    rgba(61, 225, 226, 1) 0%,
+    rgba(229, 171, 247, 1) 90%
+  );
+}
+.about {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
+}
+.about > p {
+  line-height: 2rem;
+  margin-bottom: 2rem;
+  font-size: 0.9em;
+}
+.about-header {
+  margin: 1em;
+  font-size: 2em;
+}
+.about-text {
+  margin: 0 3em;
+}
+.contact {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.contact-link {
+  margin: 1rem;
+  color: #9310ec;
+  font-size: 1.2em;
+}
+
+.contact-link:hover {
+  color: #ffffff;
+
+  transition: 0.5s;
+}
+
+.svg {
+  filter: invert(13%) sepia(97%) saturate(7473%) hue-rotate(279deg)
+    brightness(97%) contrast(99%);
+}
+.svg:hover {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
+    brightness(102%) contrast(102%);
+  transition: 0.5s;
+}
+@media (min-width: 1000px) {
+  .portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
