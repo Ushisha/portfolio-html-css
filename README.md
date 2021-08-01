@@ -6,6 +6,10 @@ This portfolio is made with HTML and CSS only.
 
 ![](./images/screenshot.png)
 
+### Links
+
+- Live Site URL: [https://ushisha.github.io/portfolio-html-css/](https://ushisha.github.io/portfolio-html-css/)
+
 ### Built with
 
 - Semantic HTML5 markup
