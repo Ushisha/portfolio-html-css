@@ -89,6 +89,7 @@ li {
   justify-content: center;
   align-items: center;
   height: 100%;
+  width: 100vw;
   text-align: center;
   padding-left: 100px;
   padding-right: 100px;
@@ -96,6 +97,10 @@ li {
 .logo-wrapper img {
   width: 50%;
   margin-bottom: 20px;
+}
+.subtitle,
+.github a {
+  text-align: center;
 }
 
 .img-text-wrapper .subtitle {
@@ -199,5 +204,8 @@ li {
   .portfolio-items-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .img-text-wrapper {
+    width: auto;
   }
 }
