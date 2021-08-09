@@ -1,6 +1,6 @@
 # Portfolio (HTML & CSS only)
 
-This portfolio is made with HTML and CSS only.
+This portfolio is built with HTML and CSS only.
 
 ### Screenshot
 
